@@ -3,13 +3,16 @@ Software Engineer role interview problem
 
 This program is written by Bora Park
 
-Files: README.md, GetDressed.java, Temperature.java, TemperatureHot.java, TemperatureCold.java
+Files: README.md, DocuSign.java, GetDressed.java, Temperature.java, TemperatureHot.java, TemperatureCold.java
 
 HOW TO RUN: 
 you can simply put all files in the default package in Eclipse and click Run.
 The program will read user input from Colsole and print out result into console.
 
-GetDressed.java : Main program.
+I use Factory Design Pattern. 
+
+DocuSign.java: Main Program.(demo class)
+GetDressed.java : Demo class will use GetDressed class to create temperature obeject.
 Temperature.java : interface for TemperatureHot.java and TemperatureCold.java
 TemperatureHot.java, TemperatureCold.java : concrete subclasses for Temperature.java
 
