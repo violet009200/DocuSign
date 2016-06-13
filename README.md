@@ -1,9 +1,9 @@
 # DocuSign
-Software Engineer role interview problem
+Software Engineer role interview problem <br />
 
-This program is written by Bora Park
+This program is written by Bora Park <br />
 
-Files: README.md, DocuSign.java, GetDressed.java, Temperature.java, TemperatureHot.java, TemperatureCold.java
+Files: README.md, DocuSign.java, GetDressed.java, Temperature.java, TemperatureHot.java, TemperatureCold.java <br />
 
 HOW TO RUN: 
 you can simply put all files in the default package in Eclipse and click Run.
@@ -21,7 +21,7 @@ Use Hashmap to check the rules ( check if the input is correct )
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
-Test case:
+Test case: <br />
 Success
 Input: HOT 8, 6, 4, 2, 1, 7
 Output: Removing PJs, shorts, t-shirt, sun visor, sandals, leaving house
