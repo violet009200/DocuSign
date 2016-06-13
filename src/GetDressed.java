@@ -31,11 +31,12 @@ public class GetDressed {
 			return new TemperatureCold();
 			
 		}
+		//incalid input
 		else if (this.command.equals(null)){
 			System.out.println("fail");
 			return null;
 		}
-		else{ //invalid command
+		else{ //invalid input
 			System.out.println("fail");
 			return null;
 		}

@@ -23,6 +23,7 @@ public class DocuSign {
 		
 		Temperature temperature = dress.getTemperature();
 		
+		//invalid input check
 		if(temperature == null){
 				return;
 		}
