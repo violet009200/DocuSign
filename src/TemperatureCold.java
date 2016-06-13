@@ -1,3 +1,4 @@
+
 import java.util.HashMap;
 
 /*
@@ -9,9 +10,6 @@ import java.util.HashMap;
 
 public class TemperatureCold implements Temperature{
 
-
-	private int i;
-	
 	/*
 	 * check if the input is follow the rules
 	 * then getCommand then print out all response
@@ -27,7 +25,7 @@ public class TemperatureCold implements Temperature{
 			return;
 		}
 		
-		for(i = 0; i<s.length;i++){
+		for(int i = 0; i<s.length;i++){
 			
 			//Check if command input has duplicated number
 			//Only 1 piece of each type of clothing may be put on

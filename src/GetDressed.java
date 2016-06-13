@@ -1,3 +1,6 @@
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 /*
@@ -10,36 +13,31 @@ public class GetDressed {
 	private String temp;
 	private String[] command;
 	
-	private GetDressed(String t, String[] com){
+	GetDressed(String t, String[] com){
 		temp = t;
 		command = com;
 	}
+	
 
-	public static void main(String[] args) {
+	public Temperature getTemperature() {
+
 		
-		//Read input from user
-		Scanner sc = new Scanner(System.in);
-		String t = sc.next(); //HOT or COLD
-				
-		String commandNums = sc.nextLine(); //command number
-		String[] c = commandNums.split(","); //save each command numbers into array
-		
-		GetDressed dress = new GetDressed(t,c);
-		
-		if(dress.temp.equals("HOT")){ //When temperature is HOT
-			
-			TemperatureHot hot = new TemperatureHot();
-			hot.doPerform(dress.command);
+		if(this.temp.equals("HOT")){ //When temperature is HOT
+
+			return new TemperatureHot();
+		}
+		else if(this.temp.equals("COLD")){ //When temperature is COLD
+
+			return new TemperatureCold();
 			
 		}
-		else if(dress.temp.equals("COLD")){ //When temperature is COLD
-			TemperatureCold cold = new TemperatureCold();
-			cold.doPerform(dress.command);;
-			
+		else if (this.command.equals(null)){
+			System.out.println("fail");
+			return null;
 		}
 		else{ //invalid command
 			System.out.println("fail");
-			return;
+			return null;
 		}
 		
 		

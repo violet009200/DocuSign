@@ -1,4 +1,6 @@
+
 import java.util.ArrayList;
+import java.util.HashMap;
 
 
 /*
@@ -11,7 +13,8 @@ import java.util.ArrayList;
 interface Temperature {
 	
 	ArrayList<String> output = new ArrayList<String>(); //save response
-
+	//HashMap hm = new HashMap();
+	
 	/*
 	 * Print out response from arraylist
 	 */
@@ -33,6 +36,7 @@ interface Temperature {
 	/*
 	 * get response for each command number
 	 * @param s input command number
+	 * Override
 	 */
 	public void getCommand(String s);
 	
@@ -40,6 +44,7 @@ interface Temperature {
 	 * check if the input is follow the rules
 	 * then getCommand then print out all response
 	 * @param s command number array
+	 * Override
 	 */
 	public void doPerform(String[] s);
 	

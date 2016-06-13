@@ -1,3 +1,4 @@
+
 import java.util.HashMap;
 
 /*
@@ -9,7 +10,6 @@ import java.util.HashMap;
 
 public class TemperatureHot implements Temperature{
 	
-	private int i;
 	
 	/*
 	 * check if the input is follow the rules
@@ -24,11 +24,12 @@ public class TemperatureHot implements Temperature{
 			System.out.println("fail");
 			return;
 		}
+	
 		
-		for(i = 0; i<s.length;i++){
-			/*
-			 *You cannot put on a jacket when it is hot
-			 */		
+		for(int i = 0; i<s.length;i++){
+			
+			 //You cannot put on a jacket when it is hot
+			 		
 			if(s[i].equals(" 3") || s[i].equals(" 5")) { 
 				Temperature.addOutput("fail");
 				break;
@@ -70,6 +71,8 @@ public class TemperatureHot implements Temperature{
 		Temperature.printResponse();
 	}
 	
+
+
 	/*
 	 * get response for each command number
 	 * @param s input command number
